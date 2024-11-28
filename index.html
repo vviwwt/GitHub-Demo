@@ -3,10 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GitHub Demo page with enhanced features">
+    <meta name="author" content="Your Name">
     <title>GitHub Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #0078D7;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            color: white;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: white;
+        }
+        .highlight {
+            color: #0078D7;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <h1>Вітаємо у GitHub-Demo!</h1>
-    <p>Це файл, створений безпосередньо в інтерфейсі GitHub.</p>
+    <header>
+        <h1>Вітаємо у GitHub-Demo!</h1>
+    </header>
+    <nav>
+        <a href="#about">Про проект</a>
+        <a href="#features">Особливості</a>
+        <a href="#contact">Контакти</a>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>Про проект</h2>
+            <p>
+                Цей проект є демонстрацією роботи з GitHub. Він містить базову HTML-сторінку з покращеною структурою, 
+                стилями та інтерактивними елементами.
+            </p>
+        </section>
+        <section id="features">
+            <h2>Особливості</h2>
+            <ul>
+                <li><span class="highlight">Адаптивний дизайн:</span> Сторінка оптимізована для різних пристроїв.</li>
+                <li><span class="highlight">Чистий код:</span> Використовуються сучасні семантичні теги.</li>
+                <li><span class="highlight">Інтерактивність:</span> Додано базову взаємодію через JavaScript.</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Контакти</h2>
+            <p>Зв'яжіться з нами за адресою: <a href="mailto:info@github-demo.com">info@github-demo.com</a></p>
+        </section>
+        <button onclick="displayMessage()">Натисніть для привітання</button>
+        <p id="message" style="font-weight: bold;"></p>
+    </main>
+    <footer>
+        <p>&copy; 2024 GitHub-Demo. Усі права захищені.</p>
+    </footer>
+    <script>
+        function displayMessage() {
+            document.getElementById('message').innerText = 'Дякуємо за відвідування GitHub-Demo!';
+        }
+    </script>
 </body>
 </html>
+
